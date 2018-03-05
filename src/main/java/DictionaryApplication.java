@@ -8,7 +8,7 @@ public class DictionaryApplication extends SpringBootServletInitializer {
 
     public static void main(String[] args) {
         log.info("Starting application");
-        DictionaryApplication.run(DictionaryApplication.class, args);
+        //DictionaryApplication.run(DictionaryApplication.class, args);
     }
 
     @Override
