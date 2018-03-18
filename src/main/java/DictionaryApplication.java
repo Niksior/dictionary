@@ -1,5 +1,6 @@
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
+import org.springframework.boot.SpringApplication;
 import org.springframework.boot.builder.SpringApplicationBuilder;
 import org.springframework.boot.web.support.SpringBootServletInitializer;
 
@@ -8,7 +9,8 @@ public class DictionaryApplication extends SpringBootServletInitializer {
 
     public static void main(String[] args) {
         log.info("Starting application");
-        //DictionaryApplication.run(DictionaryApplication.class, args);
+        SpringApplication myApp = new SpringApplication (DictionaryApplication.class);
+        myApp.run(DictionaryApplication.class, args);
     }
 
     @Override
