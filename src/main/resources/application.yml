@@ -11,3 +11,21 @@ spring:
     username: postgres
     password: admin
     driverClassName: org.postgresql.Driver
+  security:
+      user:
+        name: postgres
+        password: admin
+
+server:
+  port: 8080
+  servlet:
+    context-path: /
+    path: /
+
+logging:
+  level:
+    org.springframework.web: ERROR
+    dictionary: DEBUG
+    # Hides HHH000424: Disabling contextual LOB creation as createClob() method threw error
+    org.hibernate.engine.jdbc.env.internal.LobCreatorBuilderImpl: WARN
+#  pattern:
