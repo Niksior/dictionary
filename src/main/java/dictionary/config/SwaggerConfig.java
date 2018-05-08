@@ -1,5 +1,6 @@
 package dictionary.config;
 
+import dictionary.Controller;
 import org.springframework.boot.autoconfigure.EnableAutoConfiguration;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.ComponentScan;
@@ -21,7 +22,7 @@ public class SwaggerConfig {
         return new Docket(DocumentationType.SWAGGER_2)
                 .host("localhost:8080")
                 .select()
-                .apis(RequestHandlerSelectors.any())
+                .apis(RequestHandlerSelectors.basePackage("dictionary"))
                 .paths(PathSelectors.any())
                 .build()
                 .pathMapping("/");
