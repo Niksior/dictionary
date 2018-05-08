@@ -7,13 +7,13 @@ spring:
     generate-ddl: true
   datasource:
     platform: postgres
-    url: jdbc:postgresql://localhost:5432/postgres
+    url: jdbc:postgresql://localhost:5432/oro
     username: postgres
     password: admin
     driverClassName: org.postgresql.Driver
   security:
       user:
-        name: postgres
+        name: andrzej
         password: admin
 
 server:
