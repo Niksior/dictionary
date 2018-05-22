@@ -1,6 +1,5 @@
 package dictionary.config;
 
-import dictionary.Controller;
 import org.springframework.boot.autoconfigure.EnableAutoConfiguration;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.ComponentScan;

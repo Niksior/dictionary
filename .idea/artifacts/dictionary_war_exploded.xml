@@ -60,6 +60,15 @@
           <element id="library" level="project" name="Maven: org.sonatype.plexus:plexus-build-api:0.0.7" />
           <element id="library" level="project" name="Maven: org.apache.maven.shared:maven-mapping:3.0.0" />
           <element id="library" level="project" name="Maven: net.bytebuddy:byte-buddy:1.7.10" />
+          <element id="library" level="project" name="Maven: org.springframework.boot:spring-boot-starter-actuator:2.0.0.RELEASE" />
+          <element id="library" level="project" name="Maven: org.springframework.boot:spring-boot-actuator-autoconfigure:2.0.0.RELEASE" />
+          <element id="library" level="project" name="Maven: org.springframework.boot:spring-boot-actuator:2.0.0.RELEASE" />
+          <element id="library" level="project" name="Maven: com.fasterxml.jackson.core:jackson-databind:2.9.4" />
+          <element id="library" level="project" name="Maven: com.fasterxml.jackson.core:jackson-core:2.9.4" />
+          <element id="library" level="project" name="Maven: com.fasterxml.jackson.datatype:jackson-datatype-jsr310:2.9.4" />
+          <element id="library" level="project" name="Maven: io.micrometer:micrometer-core:1.0.1" />
+          <element id="library" level="project" name="Maven: org.hdrhistogram:HdrHistogram:2.1.10" />
+          <element id="library" level="project" name="Maven: org.latencyutils:LatencyUtils:2.0.3" />
           <element id="library" level="project" name="Maven: org.springframework.security:spring-security-core:5.0.3.RELEASE" />
           <element id="library" level="project" name="Maven: org.springframework:spring-beans:5.0.4.RELEASE" />
           <element id="library" level="project" name="Maven: org.springframework:spring-expression:5.0.4.RELEASE" />
@@ -90,10 +99,7 @@
           <element id="library" level="project" name="Maven: org.springframework.security:spring-security-config:5.0.3.RELEASE" />
           <element id="library" level="project" name="Maven: org.springframework.boot:spring-boot-starter-web:2.0.0.RELEASE" />
           <element id="library" level="project" name="Maven: org.springframework.boot:spring-boot-starter-json:2.0.0.RELEASE" />
-          <element id="library" level="project" name="Maven: com.fasterxml.jackson.core:jackson-databind:2.9.4" />
-          <element id="library" level="project" name="Maven: com.fasterxml.jackson.core:jackson-core:2.9.4" />
           <element id="library" level="project" name="Maven: com.fasterxml.jackson.datatype:jackson-datatype-jdk8:2.9.4" />
-          <element id="library" level="project" name="Maven: com.fasterxml.jackson.datatype:jackson-datatype-jsr310:2.9.4" />
           <element id="library" level="project" name="Maven: com.fasterxml.jackson.module:jackson-module-parameter-names:2.9.4" />
           <element id="library" level="project" name="Maven: org.springframework.boot:spring-boot-starter-tomcat:2.0.0.RELEASE" />
           <element id="library" level="project" name="Maven: org.apache.tomcat.embed:tomcat-embed-core:8.5.28" />
