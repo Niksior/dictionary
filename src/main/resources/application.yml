@@ -9,7 +9,7 @@ spring:
     platform: postgres
     url: jdbc:postgresql://localhost:5432/oro
     username: postgres
-    password: admin
+    password: postgres
     driverClassName: org.postgresql.Driver
   security:
       user:
@@ -17,7 +17,7 @@ spring:
         password: admin
 
 server:
-  port: 8080
+  port: 8181
   servlet:
     context-path: /
     path: /

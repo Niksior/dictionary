@@ -26,7 +26,9 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter {
                 .and()
                 .httpBasic().authenticationEntryPoint(swaggerAuthenticationEntryPoint())
                 .and()
-                .csrf().disable();
+                .csrf().disable()
+                .headers()
+                    .frameOptions();
     }
 
     @Bean

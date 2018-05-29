@@ -19,7 +19,7 @@ public class SwaggerConfig {
     @Bean
     public Docket api() {
         return new Docket(DocumentationType.SWAGGER_2)
-                .host("localhost:8080")
+                .host("localhost:8181")
                 .select()
                 .apis(RequestHandlerSelectors.basePackage("dictionary"))
                 .paths(PathSelectors.any())
