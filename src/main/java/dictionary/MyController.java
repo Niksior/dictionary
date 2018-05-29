@@ -12,7 +12,7 @@ public class MyController {
         return "index";
     }
 
-    @RequestMapping(value = "/test", produces = "application/json")
+    @RequestMapping(value = "/test", produces = "text/plain")
     public String test(@RequestParam("id") String id) {
         return "your id = " + id;
     }
