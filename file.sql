@@ -5,17 +5,18 @@ CREATE TABLE clients(
 	firstname TEXT NOT NULL,
 	surname TEXT NOT NULL,
 	PESEL CHAR(11) NOT NULL,
-	registerDate TIMESTAMP,
+	registerDate TIMESTAMP
 );
-
 
 DROP TABLE books;
 
 CREATE TABLE books(
 	ID SERIAL PRIMARY KEY,
-	author TEXT NOT NULL,
+	authorName TEXT NOT NULL,
+	authorSurname TEXT NOT NULL,
 	title TEXT NOT NULL,
-	printYear int NOT NULL
+	printYear int NOT NULL,
+	isAway BOOLEAN DEFAULT false
 );
 
 DROP TABLE loans;
@@ -28,4 +29,11 @@ CREATE TABLE loans(
 	isReturned BOOL NOT NULL,
 	tax REAL NOT NULL,
 	isTaxPayed BOOL NOT NULL
+);
+
+DROP TABLE logins;
+
+CREATE TABLE logins(
+	login TEXT NOT NULL PRIMARY KEY,
+	password TEXT NOT NULL
 );

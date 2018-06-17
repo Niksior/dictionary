@@ -1,0 +1,10 @@
+'Barbara', 'Rosiek', 'Kokaina', 1985
+'Barbara', 'Rosiek', 'Skazana', 2008
+'Barbara', 'Rosiek', 'By³am schizofreniczk¹', 2003
+'Adam', 'Nowak', 'Fala', 1997
+'Katarzyna', 'Olszewska', 'Krwawe powroty', 1999
+'Danuta', 'Podjacka', 'Zatruta mi³oœæ', 1979
+'Gabriel', 'Nakielski', 'D¿em i kwiaty', 2006
+'Mi³osz', 'Hinc', 'Bambusowe dni', 2014
+'Fabian', 'Kowalski', 'Wakacyjny domek', 2017
+'Katarzyna', 'Marchiewicz', 'S³oneczne poca³unki', 2010
