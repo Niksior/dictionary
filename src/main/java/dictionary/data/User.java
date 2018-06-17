@@ -7,7 +7,7 @@ public class User {
     private String password;
     private boolean isAdmin;
     private String firstName;
-    private String lastName;
+    private String surname;
     private String  pesel;
     private Timestamp registerDate;
 
@@ -19,12 +19,12 @@ public class User {
         this.firstName = firstName;
     }
 
-    public String getLastName() {
-        return lastName;
+    public String getSurname() {
+        return surname;
     }
 
-    public void setLastName(String lastName) {
-        this.lastName = lastName;
+    public void setSurname(String surname) {
+        this.surname = surname;
     }
 
     public String getPesel() {

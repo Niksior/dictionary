@@ -5,13 +5,9 @@ import dictionary.data.User;
 import dictionary.rowmappers.UserRowmapper;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.jdbc.core.JdbcTemplate;
-import org.springframework.jdbc.support.rowset.SqlRowSet;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
-
-import javax.sql.RowSet;
-import java.sql.ResultSet;
 
 @RestController
 public class MyController {
@@ -27,11 +23,6 @@ public class MyController {
         this.jdbcTemplate = jdbcTemplate;
     }
 
-    @RequestMapping(value = "/custom")
-    public String custom() {
-        return "index";
-    }
-
     @RequestMapping(value = "/test", produces = "text/plain")
     public String test(@RequestParam("id") String id) {
         return "your id = " + id;
@@ -44,25 +35,21 @@ public class MyController {
             jdbcTemplate.execute(myQuery);
             return "success";
         } catch (Exception e) {
-            return e.toString();
+            return "failed";
         }
     }
 
-    @RequestMapping(value = "/login", produces = "text/plain")
-    public String login(@RequestParam("name") String name, @RequestParam("passw") String passwd) {
+    @RequestMapping(value = "/login", produces = "text/html")
+    public String login(@RequestParam("name") String name, @RequestParam("passwd") String passwd) {
         try{
-            String query = "SELECT login, isAdmin FROM users WHERE login = " + name + " and password = " + passwd;
-            //SqlRowSet sqlRowSet =  jdbcTemplate.queryForRowSet(query);
-            //boolean isValid = false;
-            User user = (User) jdbcTemplate.queryForObject(query, new UserRowmapper());
-            if(user.getLogin().equals(name) && user.getPassword().equals(passwd)) {
-                loggedUser = user;
-                return "Welcome " + loggedUser.getFirstName();
-            } else {
-                return "Wrong password";
-            }
+            String query = "SELECT * FROM users WHERE login = " + name + " and password = " + passwd;
+            loggedUser = (User) jdbcTemplate.queryForObject(query, new UserRowmapper());
+            return "<script>" +
+                    "window.open('/menu/index.html', '_parent');" +
+                    "close()" +
+                    "</script>";
         } catch (Exception e) {
-            return e.toString();
+            return "Wrong password or login";
         }
     }
 }
