@@ -101,6 +101,9 @@ public class MyController {
 
             String output = "";
             List<Map<String, Object>> rows = jdbcTemplate.queryForList(query);
+            if(rows.size() < 1) {
+                return "Wrong title";
+            }
             for(Map row : rows) {
                 Book book = new Book();
                 book.setId((Integer) (row.get("ID")));
