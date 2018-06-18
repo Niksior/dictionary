@@ -1,5 +1,6 @@
 http://localhost:8181/
 
+https://www.mkyong.com/spring/spring-jdbctemplate-querying-examples/
 https://spring.io/guides/gs/relational-data-access/
 https://www.tutorialspoint.com/jdbc/jdbc-select-records.htm
 

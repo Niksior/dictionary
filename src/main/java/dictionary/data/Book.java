@@ -55,4 +55,16 @@ public class Book {
     public void setPrintYear(int printYear) {
         this.printYear = printYear;
     }
+
+    public String toString() {
+
+        String output = "\nID: " + String.valueOf(id) +
+                "\t||\tTitle: " + title +
+                "\t||\tAuthor: " + authorName + " " + authorSurname +
+                "\t||\tPrint year: " + String.valueOf(printYear) +
+                "\t||\tBook in library: " + String.valueOf(!isAway) +
+                "\n<br/>-----------------------------------------\n<br/>";
+
+        return output;
+    }
 }

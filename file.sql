@@ -14,11 +14,10 @@ DROP TABLE loans;
 CREATE TABLE loans(
 	loanID SERIAL PRIMARY KEY,
 	loanDate TIMESTAMP,
+	returnDate TIMESTAMP,
 	clientLogin TEXT NOT NULL,
-	loanExpirationDate DATE NOT NULL,
-	isReturned BOOL NOT NULL,
-	tax REAL NOT NULL,
-	isTaxPayed BOOL NOT NULL
+	bookId int NOT NULL,
+	isReturned BOOL NOT NULL
 );
 
 DROP TABLE users;
