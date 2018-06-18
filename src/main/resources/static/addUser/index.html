@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="js.js"></script>
+</head>
+<body>
+
+<div id="addBookDiv">
+    <label for="userLogin">Login:</label><input type="text" id="userLogin"> <br/>
+    <label for="userPassword">Password:</label><input type="text" id="userPassword"> <br/>
+    <label for="userName">First name:</label><input type="text" id="userName"> <br/>
+    <label for="userSurname">Surname:</label><input type="text" id="userSurname"> <br/>
+    <label for="userPESEL">PESEL:</label><input type="text" id="userPESEL"> <br/>
+    <label for="userAdmin">Admin?</label><select id="userAdmin">
+        <option value="false">false</option>
+        <option value="true">true</option>
+    </select>
+    <button onclick="addUser()">Add User</button>
+    <p id="response">...</p>
+</div>
+</body>
+</html>

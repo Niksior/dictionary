@@ -4,7 +4,7 @@ public class Book {
     private String title;
     private String authorName;
     private String authorSurname;
-    private String isAway;
+    private boolean isAway;
     private int id;
     private int printYear;
 
@@ -32,11 +32,11 @@ public class Book {
         this.authorSurname = authorSurname;
     }
 
-    public String getIsAway() {
+    public boolean getIsAway() {
         return isAway;
     }
 
-    public void setIsAway(String isAway) {
+    public void setIsAway(boolean isAway) {
         this.isAway = isAway;
     }
 

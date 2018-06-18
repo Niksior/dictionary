@@ -1,6 +1,5 @@
 http://localhost:8181/
 
-https://stackoverflow.com/questions/18930361/how-to-load-another-html-file-using-js
 https://spring.io/guides/gs/relational-data-access/
 https://www.tutorialspoint.com/jdbc/jdbc-select-records.htm
 

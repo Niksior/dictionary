@@ -4,12 +4,23 @@
     <meta charset="UTF-8">
     <title>Title</title>
     <script src="js.js"></script>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-<div id="menu">
-    <a href="/addBook/index.html">Add a book</a>
-    <!--<a onclick=""-->
+<div>
+    <header>WELCOME ADMIN</header>
+
+
+    <nav>
+        <a onclick="addBookMenu()">Add a book</a>
+        <a onclick="addUser()">Add a user</a>
+        <a onclick="showBook()">Search for a book</a>
+        <a onclick="rentBook()">Rent a book</a>
+        <a onclick="returnBook()">Return book</a>
+    </nav>
+
+    <main id="mainActivity"></main>
 </div>
 </body>
 </html>
