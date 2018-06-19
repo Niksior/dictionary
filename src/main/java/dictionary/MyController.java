@@ -94,9 +94,9 @@ public class MyController {
         try {
             String query;
             if(title.equals("'*'")) {
-                query = "SELECT * FROM books;";
+                query = "SELECT * FROM books"  + " ORDER BY id";
             } else {
-                query = "SELECT * FROM books WHERE title = " + title;
+                query = "SELECT * FROM books WHERE title = " + title  + " ORDER BY id";
             }
 
             String output = "";
